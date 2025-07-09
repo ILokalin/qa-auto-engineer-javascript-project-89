@@ -1,4 +1,5 @@
-const steps = [
+// link to non-existed step Start
+const Steps3 = [
   {
     id: 'welcome',
     messages: [
@@ -8,29 +9,6 @@ const steps = [
       {
         text: 'Начать разговор',
         nextStepId: 'start',
-        type: 'button',
-      },
-    ],
-  },
-  {
-    id: 'start',
-    messages: [
-      'Помогу вам выбрать подходящий курс. Выбирайте категорию вопроса, и буквально через пару шагов я смогу рассказать вам то, что нужно.',
-    ],
-    buttons: [
-      {
-        text: 'Сменить профессию или трудоустроиться',
-        nextStepId: 'switch',
-        type: 'button',
-      },
-      {
-        text: 'Попробовать себя в IT',
-        nextStepId: 'try',
-        type: 'button',
-      },
-      {
-        text: 'Я разработчик, хочу углубить свои знания',
-        nextStepId: 'advanced',
         type: 'button',
       },
     ],
@@ -143,4 +121,4 @@ const steps = [
   },
 ]
 
-export default steps
+export default Steps3
