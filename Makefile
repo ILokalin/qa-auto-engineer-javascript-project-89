@@ -7,4 +7,4 @@ publish:
 test:
 	npx vitest run
 test-coverage:
-	npx vitest run --coverage
+	npm test -- --coverage --coverageProvider=v8
