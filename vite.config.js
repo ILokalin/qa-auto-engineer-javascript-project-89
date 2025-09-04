@@ -11,6 +11,11 @@ export default defineConfig({
       },
     },
     environment: 'jsdom',
+    coverage: {
+      provider: 'v8', // или 'istanbul'
+      reporter: ['text', 'lcov', 'html'], // обязательно lcov
+      reportsDirectory: './coverage',
+    },
   },
   plugins: [react()],
 })
