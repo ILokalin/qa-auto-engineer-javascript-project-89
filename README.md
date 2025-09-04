@@ -1,0 +1,1 @@
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ILokalin_qa-auto-engineer-javascript-project-89&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ILokalin_qa-auto-engineer-javascript-project-89)

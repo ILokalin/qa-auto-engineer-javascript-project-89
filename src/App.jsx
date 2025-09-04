@@ -1,8 +1,6 @@
-// import React, { useState } from 'react'
 import { useState } from 'react'
 import Widget from '@hexlet/chatbot-v2'
 import steps from '../__fixtures__/steps.js'
-// import '@hexlet/chatbot-v2/styles'
 
 const App = () => {
   const [form, setForm] = useState({
@@ -13,10 +11,11 @@ const App = () => {
     address: '',
     acceptRules: false,
   })
+
   const [submittingState, setSubmittingState] = useState('fillingForm')
 
   const handleChangeField = ({ target }) => {
-    const value = target.type === 'checkbox' ? target.checked : target.value
+    const value = (target.type === 'checkbox') ? (target.checked) : (target.value)
     setForm({ ...form, [target.name]: value })
   }
 
@@ -164,7 +163,7 @@ const App = () => {
 
   return (
     <>
-      {submittingState === 'fillingForm' ? renderForm() : renderResult()}
+      {(submittingState === 'fillingForm') ? (renderForm()) : (renderResult())}
       {Widget(steps)}
     </>
   )
