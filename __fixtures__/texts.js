@@ -22,4 +22,4 @@ export const formValues = {
   address: 'test address',
   city: 'test city',
   country: 'test country',
-};
+}

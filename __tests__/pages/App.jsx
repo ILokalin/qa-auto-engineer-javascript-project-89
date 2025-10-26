@@ -72,7 +72,6 @@ class AppPage {
       expect(await screen.findByText(formLabels.rules).nextSibling).toHaveTextContent('true')
     })
   }
-
 }
 
-export default AppPage;
+export default AppPage
