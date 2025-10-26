@@ -13,7 +13,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       reporter: ['text', 'lcov'],
-      reportsDirectory: 'coverage'
+      reportsDirectory: 'coverage',
     },
     setupFiles: './vitest.setup.js',
     environment: 'jsdom',
