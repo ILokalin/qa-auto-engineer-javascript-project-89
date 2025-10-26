@@ -10,6 +10,11 @@ export default defineConfig({
         inline: ['@hexlet/chatbot-v2'],
       },
     },
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'lcov'],
+      reportsDirectory: 'coverage'
+    },
     setupFiles: './vitest.setup.js',
     environment: 'jsdom',
   },
